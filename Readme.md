@@ -2,6 +2,8 @@
 
 ## by: Nicholas Santos
 
+![alt text](https://github.com/nicsant2/SweetCharacterSheet/blob/main/frontPage.jpg?raw=true)
+
 
 
 TO RUN:
