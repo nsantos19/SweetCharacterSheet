@@ -25,7 +25,7 @@ Attacks:
 
 Attributes:
 
-	To roll any of the attributes, skills, or saving throws, right click the number
+	To roll any of the attributes, skills, or saving throws, right click the word
 	adding a check mark means proficency in that area
 
 Spells:
