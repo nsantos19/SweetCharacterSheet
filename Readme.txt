@@ -1,6 +1,4 @@
-░▒█▀▀▀█░█░░░█░█▀▀░█▀▀░▀█▀░░░▒█▀▀▄░█░░░░█▀▀▄░█▀▀▄░█▀▀▄░█▀▄░▀█▀░█▀▀░█▀▀▄░░░▒█▀▀▀█░█░░░░█▀▀░█▀▀░▀█▀
-░░▀▀▀▄▄░▀▄█▄▀░█▀▀░█▀▀░░█░░░░▒█░░░░█▀▀█░█▄▄█░█▄▄▀░█▄▄█░█░░░░█░░█▀▀░█▄▄▀░░░░▀▀▀▄▄░█▀▀█░█▀▀░█▀▀░░█░
-░▒█▄▄▄█░░▀░▀░░▀▀▀░▀▀▀░░▀░░░░▒█▄▄▀░▀░░▀░▀░░▀░▀░▀▀░▀░░▀░▀▀▀░░▀░░▀▀▀░▀░▀▀░░░▒█▄▄▄█░▀░░▀░▀▀▀░▀▀▀░░▀░
+Sweet Character Sheet
 
 by: Nicholas Santos
 
@@ -29,6 +27,10 @@ HP:
 Data:
 	All data is saved on the playerStats.json. You can edit it manually, but it might break on you.
 	To backup this your character, just backup that file.
+	
+Command:
+	You can type a diecroll into the command area to roll it, EX: 1d20+2
+	you can also type 'clear' to clear the box
 
 
 
