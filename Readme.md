@@ -1,6 +1,7 @@
 # Sweet Character Sheet
 
 ## by: Nicholas Santos
+## https://ko-fi.com/sweetsidesoftware
 
 ![image](https://github.com/nicsant2/SweetCharacterSheet/blob/main/imgs/frontPage.jpg)
 
