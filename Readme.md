@@ -2,7 +2,7 @@
 
 ## by: Nicholas Santos
 
-![image](nicsant2/SweetCharacterSheet/blob/main/frontPage.jpg?raw=true)
+![image](https://github.com/nicsant2/SweetCharacterSheet/blob/main/imgs/frontPage.jpg)
 
 
 
