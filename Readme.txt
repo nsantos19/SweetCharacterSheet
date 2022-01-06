@@ -3,6 +3,10 @@ Sweet Character Sheet
 by: Nicholas Santos
 
 
+TO RUN:
+click on the EXE in the file
+
+
 
 IMPORTANT:
 	TO SAVE ANY VALUE NOT IN A DIALOG SCREEN, YOU MUST PRESS ENTER
