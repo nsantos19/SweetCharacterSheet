@@ -1,12 +1,20 @@
-░▒█▀▀▀█░█░░░█░█▀▀░█▀▀░▀█▀░░░▒█▀▀▄░█░░░░█▀▀▄░█▀▀▄░█▀▀▄░█▀▄░▀█▀░█▀▀░█▀▀▄░░░▒█▀▀▀█░█░░░░█▀▀░█▀▀░▀█▀
-░░▀▀▀▄▄░▀▄█▄▀░█▀▀░█▀▀░░█░░░░▒█░░░░█▀▀█░█▄▄█░█▄▄▀░█▄▄█░█░░░░█░░█▀▀░█▄▄▀░░░░▀▀▀▄▄░█▀▀█░█▀▀░█▀▀░░█░
-░▒█▄▄▄█░░▀░▀░░▀▀▀░▀▀▀░░▀░░░░▒█▄▄▀░▀░░▀░▀░░▀░▀░▀▀░▀░░▀░▀▀▀░░▀░░▀▀▀░▀░▀▀░░░▒█▄▄▄█░▀░░▀░▀▀▀░▀▀▀░░▀░
+# Sweet Character Sheet
 
-by: Nicholas Santos
+## by: Nicholas Santos
+## https://ko-fi.com/sweetsidesoftware
+
+![image](https://github.com/nicsant2/SweetCharacterSheet/blob/main/imgs/frontPage.jpg)
+
+
+
+TO RUN:
+
+	click on the EXE in the file
 
 
 
 IMPORTANT:
+
 	TO SAVE ANY VALUE NOT IN A DIALOG SCREEN, YOU MUST PRESS ENTER
 	ALL DICE ROLLS ARE ENTERED IN 'number of dice' d 'number of sides'+ static number to add
 
@@ -17,18 +25,27 @@ Attacks:
 	To delete an attack, type 'delete' or 'd' in the roll area of that attack
 
 Attributes:
-	To roll any of the attributes, skills, or saving throws, right click the number
+
+	To roll any of the attributes, skills, or saving throws, right click the word
 	adding a check mark means proficency in that area
 
 Spells:
+
 	to add a high level, use the box to the right of the roll button. Type '1' for 1 level higher, '2' for two levels higher, etc
 	
 HP:
+
 	On the hp value, you can enter '-NUMBER' to subtract that from the total HP
 
 Data:
+
 	All data is saved on the playerStats.json. You can edit it manually, but it might break on you.
 	To backup this your character, just backup that file.
+	
+Command:
+
+	You can type a diecroll into the command area to roll it, EX: 1d20+2
+	you can also type 'clear' to clear the box
 
 
 
