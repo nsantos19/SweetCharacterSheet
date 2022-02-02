@@ -755,7 +755,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
     def saveSpellPopup(self,jsonSpellLevel,category,name,varRef,newVal):
         varRef = newVal
         playerDic[jsonSpellLevel][name][category] = varRef
-        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
+        with open('playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
     def spellDelete(self,item,uiReference,name,varRef,jsonSpellLevel):
@@ -763,7 +763,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
         uiReference.takeItem(row)
         varRef.pop(name)
         playerDic[jsonSpellLevel] = varRef
-        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
+        with open('playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
     def populateSpells(self):
@@ -800,13 +800,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
     '''JSON SAVER'''
     def savePlayer(self,jsonReference,classReference):
         playerDic[str(jsonReference)] = classReference
-        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
+        with open('playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
     def saveEdit(self,jsonReference,classReference,value):
         classReference = value
         playerDic[str(jsonReference)] = classReference
-        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
+        with open('playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
 
