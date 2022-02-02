@@ -176,8 +176,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
 
 
             # LOWER VALUES
-        self.ui.nameVal.returnPressed.connect(lambda: self.changeAttributes(self.ui.nameVal,'name',self.name))
-        self.ui.raceVal.returnPressed.connect(lambda: self.changeAttributes(self.ui.raceVal,'race',self.race))
+        self.ui.nameVal.returnPressed.connect(lambda: self.changeStringAttributes(self.ui.nameVal,'name',self.name))
+        self.ui.raceVal.returnPressed.connect(lambda: self.changeStringAttributes(self.ui.raceVal,'race',self.race))
         self.ui.classVal.returnPressed.connect(lambda: self.changeAttributes(self.ui.classVal,'clss',self.clss))
         self.ui.expVal.returnPressed.connect(lambda: self.changeAttributes(self.ui.expVal,'exp',self.exp))
 
@@ -755,7 +755,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
     def saveSpellPopup(self,jsonSpellLevel,category,name,varRef,newVal):
         varRef = newVal
         playerDic[jsonSpellLevel][name][category] = varRef
-        with open('playerStats.json',"w") as jsonfile:
+        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
     def spellDelete(self,item,uiReference,name,varRef,jsonSpellLevel):
@@ -763,7 +763,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
         uiReference.takeItem(row)
         varRef.pop(name)
         playerDic[jsonSpellLevel] = varRef
-        with open('playerStats.json',"w") as jsonfile:
+        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
     def populateSpells(self):
@@ -800,13 +800,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
     '''JSON SAVER'''
     def savePlayer(self,jsonReference,classReference):
         playerDic[str(jsonReference)] = classReference
-        with open('playerStats.json',"w") as jsonfile:
+        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
     def saveEdit(self,jsonReference,classReference,value):
         classReference = value
         playerDic[str(jsonReference)] = classReference
-        with open('playerStats.json',"w") as jsonfile:
+        with open('D:\\pyqtProjects\\real\\playerStats.json',"w") as jsonfile:
             json.dump(playerDic,jsonfile)
 
 
@@ -856,6 +856,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow,Player,Attack_Ui_Dialog,Eq
     def changeAttributes(self,guiReference,jsonReference,classReference):
         try:
             classReference = int(guiReference.text())
+            guiReference.setText(str(classReference))
+            self.savePlayer(jsonReference,classReference)
+            self.consoleOut(jsonReference + " OF " + str(classReference) + " SET")
+        except:
+            classReference = playerDic[jsonReference]
+            guiReference.setText(str(classReference))
+            self.consoleOut("INVALID VALUE")
+
+
+    def changeStringAttributes(self,guiReference,jsonReference,classReference):
+        try:
+            classReference = guiReference.text()
             guiReference.setText(str(classReference))
             self.savePlayer(jsonReference,classReference)
             self.consoleOut(jsonReference + " OF " + str(classReference) + " SET")
@@ -940,7 +952,7 @@ if __name__ == "__main__":
         print("USING HIGH DPI PIXMAPS")
     
 
-    with open('playerStats.json') as json_file:
+    with open('D:\\pyqtProjects\\real\\playerStats.json') as json_file:
             playerDic = json.load(json_file)
     
 
